@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AP.assignment.JournalStatusController">
+    <stylesheets>
+        <URL value="@journalstatus.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../scenes/bg_home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="540.0" fitWidth="960.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../scenes/bg_status.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="52.0" layoutX="412.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../characters/gwen_normal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="52.0" layoutX="410.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../characters/susan_normal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="52.0" layoutX="412.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../characters/robert_normal.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeJournalStatusButton" layoutX="864.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleCloseJournalStatusButton" prefHeight="80.0" prefWidth="86.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/buttonClose_status.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="journalStoryButton" layoutX="658.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleJournalStoryButton" prefHeight="82.0" prefWidth="90.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/journal_storyButton.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-healthbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-healthbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-healthbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-hungerbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-hungerbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-hungerbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-thirstbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-thirstbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-thirstbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-moralebar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-moralebar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="475.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/items-moralebar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="150.0" layoutX="464.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/statusbar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanHealthBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHealthBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanHungerBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image></ImageView>
+      <ImageView fx:id="robertMoraleBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar" fitHeight="52.0" fitWidth="37.5" layoutX="485.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1" fitHeight="52.0" fitWidth="37.5" layoutX="495.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11" fitHeight="52.0" fitWidth="37.5" layoutX="506.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar111" fitHeight="52.0" fitWidth="37.5" layoutX="517.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="528.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="539.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="550.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar112" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1112" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11112" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar111112" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1111111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1121" fitHeight="52.0" fitWidth="37.5" layoutX="506.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11121" fitHeight="52.0" fitWidth="37.5" layoutX="517.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar111121" fitHeight="52.0" fitWidth="37.5" layoutX="528.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1111121" fitHeight="52.0" fitWidth="37.5" layoutX="539.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11111111" fitHeight="52.0" fitWidth="37.5" layoutX="550.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11211" fitHeight="52.0" fitWidth="37.5" layoutX="495.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar11111112" fitHeight="52.0" fitWidth="37.5" layoutX="550.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar12" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar13" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar112" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar121" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar1112" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar11112" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHungerBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="550.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertHungerBar11112" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/hungerbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenThirstBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar1112" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenMoraleBar11121" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanThirstBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertThirstBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/thirstbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertMoraleBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertMoraleBar11" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertMoraleBar111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertMoraleBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertMoraleBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="robertMoraleBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar1" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar11" fitHeight="52.0" fitWidth="37.5" layoutX="496.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar111" fitHeight="52.0" fitWidth="37.5" layoutX="507.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar1111" fitHeight="52.0" fitWidth="37.5" layoutX="518.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar11111" fitHeight="52.0" fitWidth="37.5" layoutX="529.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar111111" fitHeight="52.0" fitWidth="37.5" layoutX="540.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="susanMoraleBar1111111" fitHeight="52.0" fitWidth="37.5" layoutX="551.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/moralebar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar1111112" fitHeight="52.0" fitWidth="37.5" layoutX="561.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar111111121" fitHeight="52.0" fitWidth="37.5" layoutX="561.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gwenHealthBar111111111" fitHeight="52.0" fitWidth="37.5" layoutX="561.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/healthbar-bg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
