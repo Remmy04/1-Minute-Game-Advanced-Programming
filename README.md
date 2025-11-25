@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/assets/github-header-banner.png" width="100%">
+</p>
+
 # ⏱️ 1 Minute – Pandemic Lockdown Survival Game
 
 **1 Minute** is a Java survival–strategy game developed for the **Advanced Programming (ITS66704)** module at Taylor’s University.  
